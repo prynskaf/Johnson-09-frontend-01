@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,900;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* header */
+header {
+    background-image: url(https://www.economist.com/cdn-cgi/image/width=1424,quality=80,format=auto/sites/default/files/images/print-edition/20180113_CNP002_0.jpg);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(251, 245, 245);
+    object-fit: cover;
+
+}
+
+header h1 {
+    font-weight: 600px;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+header p  , header q {
+font-size: 25px;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+border-left: 9px solid  red;
+padding-left: 10px;
+}
+
+
+/* main  */
+main {
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 40px;
+    padding: 50px;
+    justify-content: space-evenly;
+    margin: 0 60px;
+    /* background-color: red; */
+    place-content: center;
+    
+}
+
+main p , main q , main h3 , main h1{
+    font-size: 25px;
+    padding: 30px;
+}
+
+
+main section {
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    color:black;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.473);
+}
+
+/* main section__1 */
+ main .section__1  , main .section__2 {
+    margin: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .section__1 ul  li {
+    font-size: 25px;
+    list-style: none;
+    border: 1px solid black;
+    padding: 10px 80px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+main img {
+   padding:30px;
+}
+
+
+/* acrtice */
+article {
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+   padding: 30px;
+}
+
+article h1 {
+    font-size: 40px;
+    padding: 30px 0;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+    line-height: 20px;
+}
+
+article img {
+    width: 60%;
+    height: 600px;
+    border: none;
+    border-radius: 40px;
+}
+
+article figcaption {
+    font-style: italic;
+    font-size: 24px;
+    font-weight: bold;
+    color: green;
+}
+
+article p {
+    margin-top: 40px;
+     margin: 0 80px;
+     line-height: 30px;
+}
+
+article em {
+color: green;
+align-self: flex-start;
+margin-left: 180px;
+margin-bottom: 20px;
+}
+
+/* deitials */
+aside {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 24px;
+    width: 100%;
+    height: 100vh;
+    /* background-color: rgb(217, 218, 218); */
+}
+
+aside img {
+    width: 700px;
+    border: none;
+    border-radius: 20px;
+    
+}
+
+aside figure {
+    display: flex;
+    flex-direction: column;
+    color: green;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+aside table {
+    flex-direction: row;
+    justify-tracks: center;
+    align-items: center;
+}
+
+table, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 15px;
+    height: 120px;
+    font-size: 24px;
+    padding: 15px;
+    width: 700px;
+    background-color: rgb(202, 204, 203);
+    transition:  all 0.3s ease;
+  }
+
+  .bold {
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  table caption {
+    padding: 10px;
+  }
+
+table td:hover {
+  background-color: rgb(139, 138, 138);
+  color: white;
+  cursor: pointer;
+  }
+
+  /* summary */
+  summary {
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 60px;
+    gap: 20px;
+  height: 100vh;
+    margin: 50px;
+  }
+
+  summary h4 {
+    font-size: 56px;
+    text-decoration: underline;
+  }
+
+
+  /* footer */
+  footer {
+    background-color: green;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    font-size: 24px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    left: 0;
+    bottom: 0; 
+    width: 100%; 
+    color: white;
+  }
+
+  footer a {
+    text-decoration: underline;
+    color: white;
+  }
+
+  
